@@ -13,8 +13,5 @@ rm /home/container/steamcmd.tar.gz
 # change directory
 cd /home/container/app/linux
 
-# change the permissions of the script so it can be executed while at the same time unreadable by other users
-chmod 700 update_starbound_server.sh
-
 # run the Server
 ./starbound_server
