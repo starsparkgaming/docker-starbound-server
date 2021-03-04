@@ -10,8 +10,11 @@ rm /home/container/steamcmd.tar.gz
 # install steamm app with steamcmd
 ./steamcmd/steamcmd.sh +login "${STEAM_USERNAME}" "${STEAM_PASSWORD}" "${STEAM_AUTH}" +force_install_dir /home/container/app +app_update 211820 +quit
 
+# change directory
+cd /home/container/app/linux
+
 # change the permissions of the script so it can be executed while at the same time unreadable by other users
 chmod 700 update_starbound_server.sh
 
 # run the Server
-/home/container/app/linux/starbound_server
+./starbound_server
